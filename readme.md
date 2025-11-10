@@ -8,9 +8,10 @@ This repository serves as a continuously updated collection of algorithms, tools
 - [End-to-end workflows for metagenomes and isolates](#end-to-end-workflows-for-metagenomes-and-isolates)
     - [Workflows for metagenome](#workflows-for-metagenome)
     - [Workflows for isolate](#workflows-for-isolate)
-- [Microbial genomes resources](#microbial-genomic-resources)
+- [Data resources](#data-resources)
     - [Prokaryotic genome](#prokaryotic-genome)
     - [Phage genome](#phage-genome)
+    - [Metagenomes](#metagenomes)
 - [Quality control of sequencing data](#quality-control-of-sequencing-data)
     - [Reads simulation](#reads-simulation)
     - [Basecall](#basecall)
@@ -178,8 +179,11 @@ This repository serves as a continuously updated collection of algorithms, tools
 - [`BugBuster`](https://github.com/gene2dis/BugBuster) - Nextflow
     - Fuentes-Santander F, Curiqueo C, Araos R, Ugalde JA. BugBuster: A novel automatic and reproducible workflow for metagenomic data analysis. **bioRxiv** **(2025)**. https://doi.org/10.1101/2025.02.24.639915
 
-- [`MARTi`](https://marti.cyverseuk.org/)
+- [`MARTi`](https://github.com/richardmleggett/MARTi) - web: https://marti.cyverseuk.org/
     - Peel N, Martin S, Heavens D, et al. MARTi: a real-time analysis and visualisation tool for nanopore metagenomics. **bioRxiv** **(2025)**. https://doi.org/10.1101/2025.02.14.638261
+
+- [MetaFlowX](https://github.com/01life/MetaflowX) - [nextflow, v1.0.1, 2025.10]
+    - Xia Y, Liang L, Wang X, et al. MetaflowX: a scalable and resource-efficient workflow for multi-strategy metagenomic analysis. **_Nucleic Acids Research_**, **2025**, 53(18): gkaf954.
 
 ### Workflows for isolate
 - [`Bactopia`](https://github.com/bactopia/bactopia) - (Nextflow/Perl, v3.1.0, 2024.9)
@@ -214,7 +218,7 @@ This repository serves as a continuously updated collection of algorithms, tools
 - [`Hybracter`](https://github.com/gbouras13/hybracter) - (Python, v0.10.0, 2024.10)
     - Bouras G, Houtak G, Wick R, et al. Hybracter: Enabling Scalable, Automated, Complete and Accurate Bacterial Genome Assemblies. **_Microbial Genomics_** 10, 5 **(2024)**. https://doi.org/10.1099/mgen.0.001244
 
-## Microbial genomic resources
+## Data resources
 ### Prokaryotic genome
 - [`GTDB`](https://gtdb.ecogenomic.org/about) - (Genomes, R220, 2024.04)
     - Parks DH, Chuvochina M, Rinke C, et al. GTDB: an ongoing census of bacterial and archaeal diversity through a phylogenetically consistent, rank normalized and complete genome-based taxonomy. **_Nucleic Acids Res_** 50(D1), D785–D794 **(2022)**. https://doi.org/10.1093/nar/gkab776
@@ -262,6 +266,11 @@ This repository serves as a continuously updated collection of algorithms, tools
 
 - [`PhageDive`](https://phagedive.dsmz.de/) - Web Search
     - Rolland C, Wittmann J, Reimer LC, et al. PhageDive: the comprehensive strain database of prokaryotic viral diversity, **_Nucleic Acids Res_** 53(D1), D819–D825 **(2025)**. https://doi.org/10.1093/nar/gkae878
+
+
+### Metagenomes
+- [metalog](https://metalog.embl.de/) - Web
+    - Kuhn M, Schmidt TSB, Ferretti P, et al. Metalog: curated and harmonised contextual data for global metagenomics samples, **_Nucleic Acids Res_** gkaf1118, **(2025)**. https://doi.org/10.1093/nar/gkaf1118
 
 ## Quality control of sequencing data
 ### Reads simulation
@@ -352,7 +361,7 @@ This repository serves as a continuously updated collection of algorithms, tools
     - Buchfink B, Reuter K & Drost HG. Sensitive protein alignments at tree-of-life scale using DIAMOND. **_Nat Methods_** 18, 366–368 **(2021)**. https://doi.org/10.1038/s41592-021-01101-x
 
 - [`LexicMap`](https://github.com/shenwei356/LexicMap) - (Go, v0.4.0, 2024.08)
-    - Shen W, Iqbal Z. LexicMap: efficient sequence alignment against millions of prokaryotic genomes. **bioRxiv** **(2024)**. https://doi.org/10.1101/2024.08.30.610459
+    - Shen W, Lees JA, Iqbal Z. Efficient sequence alignment against millions of prokaryotic genomes with LexicMap. **_Nat Biotechnol_** **(2025)**. https://doi.org/10.1038/s41587-025-02812-8
 
 - [`foldmason`](https://github.com/steineggerlab/foldmason) - (C/C++, v1-763a428, 2024.08)
     - Gilchrist CLM, Mirdita M, Steinegger M. Multiple Protein Structure Alignment at Scale with FoldMason. **bioRixv** **(2024)**. https://doi.org/10.1101/2024.08.01.606130
@@ -383,7 +392,7 @@ This repository serves as a continuously updated collection of algorithms, tools
     - Steinegger M, Söding J. MMseqs2 enables sensitive protein sequence searching for the analysis of massive data sets. **_Nat Biotechnol_** 35, 1026–1028 **(2017)**. https://doi.org/10.1038/nbt.3988
     
 - [`MMseq2 CUDA GPU-based`](https://github.com/soedinglab/mmseqs2) - NVIDIA blog: https://developer.nvidia.com/blog/boost-alphafold2-protein-structure-prediction-with-gpu-accelerated-mmseqs2
-    - Kallenborn F, Chacon A, Hundt C, et al. GPU-accelerated homology search with MMseqs2. **bioRxiv** **(2025)**. https://doi.org/10.1101/2024.11.13.623350
+    - Kallenborn F, Chacon A, Hundt C, et al. GPU-accelerated homology search with MMseqs2. **_Nat Methods_** **(2025)**. https://doi.org/10.1038/s41592-025-02819-8
 
 - [`USEARCH`](https://github.com/rcedgar/usearch12) - (C++/C, v12.0-beta1, 2024.6)
     - Edgar RC. Search and clustering orders of magnitude faster than BLAST. **_Bioinformatics_** 26(19), 2460–2461 **(2010)**. https://doi.org/10.1093/bioinformatics/btq461
@@ -445,7 +454,7 @@ This repository serves as a continuously updated collection of algorithms, tools
     - Hu J, Wang Z, Sun Z, et al. NextDenovo: an efficient error correction and accurate assembly tool for noisy long reads. **_Genome Biol_** 25, 107 **(2024)**. https://doi.org/10.1186/s13059-024-03252-4
 
 - [`Autocycler`](https://github.com/rrwick/Autocycler) - (Rust, v0.4.0, 2025.4) - A tool for generating consensus long-read assemblies for bacterial genomes
-    - Wick RR, Howden BP, Stinear TP. Autocycler: long-read consensus assembly for bacterial genomes. **bioRxiv** **(2025)**. https://doi.org/10.1101/2025.05.12.653612
+    - Wick RR, Howden BP, Stinear TP. Autocycler: long-read consensus assembly for bacterial genomes. **_Bioinformatics_** btaf474 **(2025)**. https://doi.org/10.1093/bioinformatics/btaf474
 
 - [`nanoMDBG`](https://github.com/GaetanBenoitDev/metaMDBG) - (C++, v1.1, 2024.12)
     - Benoit G, James R, Raguideau S, et al. High-quality metagenome assembly from nanopore reads with nanoMDBG. **bioRxiv** **(2025)**. https://doi.org/10.1101/2025.04.22.649928
@@ -507,8 +516,8 @@ This repository serves as a continuously updated collection of algorithms, tools
     - Mastoras M, Asri M, Brambrink L, et al. Highly accurate assembly polishing with DeepPolisher. **_Genome Res_** **(2025)**. https://doi.org/10.1101/gr.280149.124
 
 ### Genome size estimation
-- [`LRGE`](https://github.com/mbhall88/lrge) - (Rust, v0.1.3, 2024.12) - Pure
-    - Hall MB, Coin LJM. Genome size estimation from long read overlaps. **bioRxiv** **(2024)**. https://doi.org/10.1101/2024.11.27.625777
+- [`LRGE`](https://github.com/mbhall88/lrge) - (Rust, v0.2.1, 2025.09) - Pure
+    - Hall MB, Zhou C, Coin LJM. Genome size estimation from long read overlaps. **_Bioinformatics_**, btaf593 **(2025)**. https://doi.org/10.1093/bioinformatics/btaf593
 
 ### Other elements assmebly
 - [`Chopper`](https://github.com/kschimke/Chopper) - (Python) - NoRelease
@@ -705,10 +714,10 @@ This repository serves as a continuously updated collection of algorithms, tools
     - Kim J, Steinegger M. Metabuli: sensitive and specific metagenomic classification via joint analysis of amino acid and DNA. **_Nat Methods_** 21, 971–973 **(2024)**. https://doi.org/10.1038/s41592-024-02273-y
 
 - [`Metabuli-App`](https://github.com/steineggerlab/Metabuli-App) - (js, v1.0.1, 2025.1) - compatible with macOS/Windows/Linux
-    - Lee SJ, Kim J, Mirdita M, et al. Easy and interactive taxonomic profiling with Metabuli App. **bioRxiv** **(2025)**. https://doi.org/10.1101/2025.03.10.642298
+    - Lee SJ, Kim J, Mirdita M, et al. Easy and interactive taxonomic profiling with Metabuli App. **_bioinformatics_**, btaf557 **(2025)**. https://doi.org/10.1093/bioinformatics/btaf557
 
 - [`sylph`](https://github.com/bluenote-1577/sylph) - (Rust, v0.6.1, 2024.4)
-    - Shaw J, Yu YW. Rapid species-level metagenome profiling and containment estimation with sylph. **_Nat Biotechnol_** **(2024)**. https://doi.org/10.1038/s41587-024-02412-y
+    - Shaw J, Yu YW. Rapid species-level metagenome profiling and containment estimation with sylph. **_Nat Biotechnol_** 43, 1348–1359 **(2024)**. https://doi.org/10.1038/s41587-024-02412-y
 
 - [`Kaiju`](https://github.com/bioinformatics-centre/kaiju) - (C, v1.10.1, 2024.3)
     - Menzel P, Ng K & Krogh A. Fast and sensitive taxonomic classification for metagenomics with Kaiju. **_Nat Commun_** 7, 11257 **(2016)**. https://doi.org/10.1038/ncomms11257
@@ -963,6 +972,9 @@ This repository serves as a continuously updated collection of algorithms, tools
 - [Phynteny](https://github.com/susiegriggo/Phynteny_transformer) - (Jupyter, v0.1.2, 2025.06)
     - Grigson SR, Bouras G, Papudeshi B, et al. Synteny-aware functional annotation of bacteriophage genomes with Phynteny. **bioRxiv** **(2025)**. https://doi.org/10.1101/2025.07.28.667340
 
+- [empathi](https://huggingface.co/AlexandreBoulay/EmPATHi)
+    - Boulay A, Leprince A, Enault F, et al. Empathi: embedding-based phage protein annotation tool by hierarchical assignment. **_Nature Communications_** 16, 9114 **(2025)**. https://doi.org/10.1038/s41467-025-64177-5
+
 ## Metabolic construction
 ### Tools for metabolic analysis
 - [`antiSMASH`](https://github.com/antismash/antismash) - (Python, v7.1.0.1, 2023.11)
@@ -1020,7 +1032,7 @@ This repository serves as a continuously updated collection of algorithms, tools
     - Shimoyama Y. ANIclustermap: A tool for drawing ANI clustermap between all-vs-all microbial genomes. [Computer software] (2022). 
 
 - [`EvANI`](https://github.com/sinamajidian/EvANI) - (Shell/Python, Norelease)
-    - Sina Majidian, Stephen Hwang, Mohsen Zakeri, Ben Langmead. EvANI benchmarking workflow for evolutionary distance estimation. **bioRxiv** **(2025)**. https://doi.org/10.1101/2025.02.23.639716
+    - Sina Majidian, Stephen Hwang, Mohsen Zakeri, Ben Langmead. EvANI benchmarking workflow for evolutionary distance estimation. **_Briefings in Bioinformatics_** 26(3), bbaf267 **(2025)**. https://doi.org/10.1093/bib/bbaf267
 
 - [MANIAC](https://github.com/bioinf-mcb/MANIAC) - (Snakemake, v1.0.0, 2024.10) - MMseqs2-based ANI calculator.
     - Ndovie W, Havr´anek J,  Leconte J, et al. Exploration of the genetic landscape of bacterial dsDNA viruses reveals an ANI gap amidst extensive mosaicism. **bioRxiv** **(2024)**. https://doi.org/10.1101/2024.04.23.590796
@@ -1225,6 +1237,9 @@ This repository serves as a continuously updated collection of algorithms, tools
 
 - [`Castaanet`](https://github.com/MultipathogenGenomics/castanet) - (Python, v8.1, 2025.1)
     - Mayne R, Secret S, Geoghegan C, et al. Castanet: a pipeline for rapid analysis of targeted multi-pathogen genomic data. **_Bioinformatics_** 40(10), btae591 **(2024)**. https://doi.org/10.1093/bioinformatics/btae591
+
+- [PathogenSurveillance](https://github.com/nf-core/PathogenSurveillance) - [nf, 1.0.0, 2025.06]
+    - Foster ZSL, Sudermann MA, Parada0Rojas C, et al. PathogenSurveillance: an automated pipeline for population genomic analyses and pathogen identification. **bioRxiv** **(2025)**. https://doi.org/10.1101/2025.10.31.685798
 
 ##  Modifications
 - [`Robin`](https://github.com/looselab/robin) - (Python, Robin-d2f9b3, 2025.1) - A package to run real time analysis of nanopore methylation data
