@@ -48,6 +48,7 @@ This repository serves as a continuously updated collection of algorithms, tools
     - [Profile read](#profile-read)
     - [Profile contig](#profile-contig)
     - [MAG taxonomy](#mag-taxonomy)
+    - [Classify virus](#classify-virus)
 - [Annotation](#annotation)
     - [Tools for annotation](#tools-for-annotation)
     - [Databases for annotation](#databases-for-annotation)
@@ -83,9 +84,16 @@ This repository serves as a continuously updated collection of algorithms, tools
 - [Surveillance](#surveillance)
 - [Modifications](#modifications)
 - [Pangenome related](#pangenome-related)
+- [mGWAS](#mgwas)
 
 
 ## Amplicon data analysis
+- [`savont`](https://github.com/bluenote-1577/savont) - (Rust, v0.3.2, 2026.01)
+    - Amplicon sequencing variants from 16s ONT R10.4 / HiFi long reads
+
+- [`emu`](https://github.com/treangenlab/emu) - (Python, v3.6.1, 2026.02) - [emu benchmark](https://gitlab.com/treangenlab/emu-benchmark)
+    - Curry KD, Wang Q, Nute MG, et al. Emu: species-level microbial community profiling of full-length 16S rRNA Oxford Nanopore sequencing data. **Nat Methods** 19, 845–853 **(2022)**. https://doi.org/10.1038/s41592-022-01520-4
+
 ### Tools for amplicon
 - [`UPARSE`](http://drive5.com/uparse/) - (v12.0-beta1, 2024.6)
     - Edgar R. UPARSE: highly accurate OTU sequences from microbial amplicon reads. **_Nat Methods_** 10, 996–998 **(2013)**. https://doi.org/10.1038/nmeth.2604
@@ -185,6 +193,9 @@ This repository serves as a continuously updated collection of algorithms, tools
 - [MetaFlowX](https://github.com/01life/MetaflowX) - [nextflow, v1.0.1, 2025.10]
     - Xia Y, Liang L, Wang X, et al. MetaflowX: a scalable and resource-efficient workflow for multi-strategy metagenomic analysis. **_Nucleic Acids Research_**, **2025**, 53(18): gkaf954.
 
+- [Meteor2](https://github.com/metagenopolis/meteor) - [Python, v2.0.21, 2025.11]
+    - Ghozlane A, Thirion F, Plaza Oñate F, et al. Accurate profiling of microbial communities for shotgun metagenomic sequencing with Meteor2. **_Microbiome_** 13, 227 **(2025)**. https://doi.org/10.1186/s40168-025-02249-w
+
 ### Workflows for isolate
 - [`Bactopia`](https://github.com/bactopia/bactopia) - (Nextflow/Perl, v3.1.0, 2024.9)
     - Petit RA and Read TD. Bactopia: a Flexible Pipeline for Complete Analysis of Bacterial Genomes. **_mSystems_** 5 **(2020)**. https://doi.org/10.1128/msystems.00190-20
@@ -224,9 +235,12 @@ This repository serves as a continuously updated collection of algorithms, tools
     - Parks DH, Chuvochina M, Rinke C, et al. GTDB: an ongoing census of bacterial and archaeal diversity through a phylogenetically consistent, rank normalized and complete genome-based taxonomy. **_Nucleic Acids Res_** 50(D1), D785–D794 **(2022)**. https://doi.org/10.1093/nar/gkab776
 
 - [`GlobDB`](https://globdb.org) - (Genomes, 220) - A collection from Daan Septh
-    - Speth DR, Pullen N, Aroney STN, et al. GlobDB: A comprehensive species-dereplicated microbial genome resource. **arXiv** **(2025)**. https://doi.org/10.48550/arXiv.2506.11896
+    - Speth DR, Pullen N, Aroney STN, et al. GlobDB: A comprehensive species-dereplicated microbial genome resource. **_Bioinformatics Advances_** 5(1), vbaf280 **(2025)**. https://doi.org/10.1093/bioadv/vbaf280
 
 - [`proGenomes`](https://progenomes.embl.de/index.cgi) - (Genomes, v3)
+
+- [`proGenomes4`](http://progenomes.embl.de/)
+    - Fullam A, Letunic I, Maistrenko OM, et al. proGenomes4: providing 2 million accurately and consistently annotated high-quality prokaryotic genomes. **Nucleic Acids Research**, 54 **(2026)**. https://doi.org/10.1093/nar/gkaf1208
 
 - [`cFMD`](https://github.com/SegataLab/cFMD) - (Food Microb Genomes, v1.2.0, 2024.08)
     - Carlino N, Blanco-Míguez A, Punčochář M, et al. Unexplored microbial diversity from 2,500 food metagenomes and links with the human microbiome. **_Cell_** 187(20), 5775-5795 **(2024)**. https://doi.org/10.1016/j.cell.2024.07.039
@@ -323,6 +337,9 @@ This repository serves as a continuously updated collection of algorithms, tools
 
 - [`sequali`](https://github.com/rhpvorderman/sequali) - (C/python, v0.12.0, 2024.10)
     - Vorderman RHP. Sequali: efficient and comprehensive quality control of short- and long-read sequencing data. **_Bioinformatics Advances_** 5(1), vbaf010 **(2025)**. https://doi.org/10.1093/bioadv/vbaf010
+
+- [`GuaCAMOLE`](https://github.com/CIBIV/GuaCAMOLE) - 
+    - Holcik L, von Haeseler A, Pflug FG. Genomic GC bias correction improves species abundance estimation from metagenomic data. **Nat Commun** 16, 10523 **(2025)**. https://doi.org/10.1038/s41467-025-65530-4
 
 ### Correct reads
 ### Consensus sequence from long-reads
@@ -562,7 +579,7 @@ This repository serves as a continuously updated collection of algorithms, tools
     - Zhang Y, Cheng M, Ning K. SMeta. a binning tool using single-cell sequences to aid in reconstructing species from metagenome accurately. **bioRxiv** **(2024)**. https://doi.org/10.1101/2024.08.25.609542
     - 
 - [`Bin Chiken`](https://github.com/AroneyS/binchicken) - (Python, v0.12.6, 2024.12)
-    - Aroney STN, Newell RJP, Tyson GW, Woodcroft BJ. Bin Chicken: targeted metagenomic coassembly for the efficient recovery of novel genomes. **bioRxiv** **(2024)**. https://doi.org/10.1101/2024.11.24.625082
+    - Aroney STN, Newell RJP, Tyson GW, Woodcroft BJ. Bin Chicken: targeted metagenomic coassembly for the efficient recovery of novel genomes. **_Nat Methods_** **(2025)**. https://doi.org/10.1038/s41592-025-02901-1
 
 - [`MetaCoAG`](https://github.com/metagentools/MetaCoAG) - (Python, v1.2.2, 2024.9)
     - Mallawaarachchi V, Lin Y. (2022). MetaCoAG: Binning Metagenomic Contigs via Composition, Coverage and Assembly Graphs. **_Research in Computational Molecular Biology RECOMB_** 13278  **(2022)**. https://doi.org/10.1007/978-3-031-04749-7_5
@@ -575,6 +592,10 @@ This repository serves as a continuously updated collection of algorithms, tools
 
 - [`MetaBinner`](https://github.com/ziyewang/MetaBinner) - (Python/Perl, v1.4.4, 2022.9)
     - Wang Z, Huang P, You R, et al. MetaBinner: a high-performance and stand-alone ensemble binning method to recover individual genomes from complex microbial communities. **_Genome Biol_** 24, 1 **(2023)**. https://doi.org/10.1186/s13059-022-02832-6
+
+- [LorBin](https://github.com/LorMeBioAI/LorBin) - (Python, v1.0.0, 2024.10)
+    - Xue W, Liu Z, Zhang Y, et al. LorBin: efficient binning of long-read metagenomes by multiscale adaptive clustering and evaluation. **_Nat Commun_** 16, 9353 **(2025)**. https://doi.org/10.1038/s41467-025-64916-8
+
 
 ### Strain-level resolve
 - [`inStrain`](https://github.com/MrOlm/inStrain) - (Python, v1.9.0, 2024.5)
@@ -775,6 +796,13 @@ This repository serves as a continuously updated collection of algorithms, tools
 - [`kMetaShot`](https://github.com/gdefazio/kMetaShot) - (Python,2024.9)
     - Defazio G, Tangaro MA, Pesole G, et al. kMetaShot: a fast and reliable taxonomy classifier for metagenome-assembled genomes. **_Briefings in Bioinformatics_** 26(1), bbae680 **(2025)**. https://doi.org/10.1093/bib/bbae680
 
+- [`metax`](https://github.com/hzi-bifo/Metax) - (shell, v0.9.22, 2026.02)
+    - Deng ZL, Safaei N, McHardy AC. Metax: A Coverage-Informed Probabilistic Framework for Accurate Cross-Domain Taxon Profiling. **bioRxiv** **(2025)**. https://doi.org/10.64898/2025.12.04.692287
+
+### Classify viruses
+- [`vConTACT3`](https://bitbucket.org/MAVERICLab/vcontact3.git) - (python, v3.1.9, 2025.12)
+    - Bolduc B, Zablocki O, Turner D, et al. Machine learning enables scalable and systematic hierarchical virus taxonomy. **Nat Biotechnol** **(2025)**. https://doi.org/10.1038/s41587-025-02946-9
+
 ## Annotation
 ### Tools for annotation
 - [`eggNOG-mapper v2`](https://github.com/eggnogdb/eggnog-mapper) - (Python, v2.1.12, 2023.8)
@@ -871,6 +899,9 @@ This repository serves as a continuously updated collection of algorithms, tools
 ### Databases for annotation
 - [`eggNOG 6.0`](http://eggnog6.embl.de/) - (AA Genes, v6.0, 2022.09)
     - Hernández-Plaza A, Szklarczyk D, Botas J, et al. eggNOG 6.0: enabling comparative genomics across 12 535 organisms. **_Nucleic Acids Res_** 51(D1), D389–D394 **(2023)**. https://doi.org/10.1093/nar/gkac1022
+    
+- [`eggNOG 7.0`](https://eggnogdb.org/)
+    - Hernández-Plaza A, Deng Z, Robledo-Yagüe F, et al. eggNOG v7: phylogeny-based orthology predictions and functional annotations. **Nucleic Acids Research** 54, **(2025)**. https://doi.org/10.1093/nar/gkaf1249
 
 - [`KEGG`](https://www.genome.jp/kegg/) - (AA Genes, 111.0, 2024.08)
     - Kanehisa M, Sato Y, Kawashima M, et al. KEGG as a reference resource for gene and protein annotation. **_Nucleic Acids Res_** 44(D1), D457–D462 **(2016)**. https://doi.org/10.1093/nar/gkv1070
@@ -969,11 +1000,14 @@ This repository serves as a continuously updated collection of algorithms, tools
 - [`PhageGE`](http://jason-zhao.shinyapps.io/PhageGE_Update/) - Web Platform
     - Zhao J, Han J, Lin YW, et al. PhageGE: an interactive web platform for exploratory analysis and visualization of bacteriophage genomes. **_GigaScience_** 13, giae074 **(2024)**. https://doi.org/10.1093/gigascience/giae074
 
-- [Phynteny](https://github.com/susiegriggo/Phynteny_transformer) - (Jupyter, v0.1.2, 2025.06)
+- [`Phynteny`](https://github.com/susiegriggo/Phynteny_transformer) - (Jupyter, v0.1.2, 2025.06)
     - Grigson SR, Bouras G, Papudeshi B, et al. Synteny-aware functional annotation of bacteriophage genomes with Phynteny. **bioRxiv** **(2025)**. https://doi.org/10.1101/2025.07.28.667340
 
-- [empathi](https://huggingface.co/AlexandreBoulay/EmPATHi)
+- [`empathi`](https://huggingface.co/AlexandreBoulay/EmPATHi)
     - Boulay A, Leprince A, Enault F, et al. Empathi: embedding-based phage protein annotation tool by hierarchical assignment. **_Nature Communications_** 16, 9114 **(2025)**. https://doi.org/10.1038/s41467-025-64177-5
+
+- [`Phold`](https://github.com/gbouras13/phold) - (Python, v1.2.2, 2026.01)
+    - Bouras G, Grigson SR, Mirdita M, et al. Protein structure-informed bacteriophage genome annotation with Phold. **Nucleic Acids Research** 54, 1(13), gkaf1448, **(2026)**. https://doi.org/10.1093/nar/gkaf1448
 
 ## Metabolic construction
 ### Tools for metabolic analysis
@@ -1008,6 +1042,9 @@ This repository serves as a continuously updated collection of algorithms, tools
     - Udwary DW, Doering DT, Foster B, et al. The secondary metabolism collaboratory: a database and web discussion portal for secondary metabolite biosynthetic gene clusters. **_Nucleic Acids Res_** 53(D1), D717–D723 **(2025)**. https://doi.org/10.1093/nar/gkae1060
 
 ## Comparative genomics
+
+- [`GLADE`](https://github.com/lauriebelch/GLADE/) - (Python)
+    - Belcher LJ, Kelly S. GLADE: Accurate inference of Gains, Losses, Ancestral genomes, and Duplication Events for comparative genomics. **bioRxiv** **(2025)**. https://doi.org/10.64898/2026.01.27.702036
 ### AAI and ANI
 - [`ANI calculator`](http://enve-omics.ce.gatech.edu/ani/) - web
 
@@ -1022,9 +1059,6 @@ This repository serves as a continuously updated collection of algorithms, tools
 - [`EzAAI`](https://github.com/endixk/ezaai) - (Java, v1.2.3, 2024.02)
     - Kim D, Park S & Chun J. Introducing EzAAI: a pipeline for high throughput calculations of prokaryotic average amino acid identity. **_J Microbiol_** 59, 476–480 **(2021)**. https://doi.org/10.1007/s12275-021-1154-0
 
-- [`SynTracker`](https://github.com/leylabmpi/SynTracker) - (Python, v1.3.1, 2024.09)
-    - Enav H, Paz I & Ley RE. Strain tracking in complex microbiomes using synteny analysis reveals per-species modes of evolution. **_Nat Biotechnol_** 43, 773–783 **(2025)**. https://doi.org/10.1038/s41587-024-02276-2
-
 - [`skani`](https://github.com/bluenote-1577/skani) - (Rust, v0.2.2, 2024.07)
     - Shaw J, Yu, YW. Fast and robust metagenomic sequence comparison through sparse chaining with skani. **_Nat Methods_** 20, 1661–1665 **(2023)**. https://doi.org/10.1038/s41592-023-02018-3
 
@@ -1037,6 +1071,16 @@ This repository serves as a continuously updated collection of algorithms, tools
 - [MANIAC](https://github.com/bioinf-mcb/MANIAC) - (Snakemake, v1.0.0, 2024.10) - MMseqs2-based ANI calculator.
     - Ndovie W, Havr´anek J,  Leconte J, et al. Exploration of the genetic landscape of bacterial dsDNA viruses reveals an ANI gap amidst extensive mosaicism. **bioRxiv** **(2024)**. https://doi.org/10.1101/2024.04.23.590796
 
+- [SNooPy](https://github.com/RolandFaure/SNooPy) - (Python, v0.3.16, 2025.12)
+    - Roland F, Ulysse F, Tam T, et al. SNooPy: a statistical framework for long-read metagenomic variant calling. **bioRxiv** **(2025)**. https://doi.org/10.64898/2025.12.01.691549
+
+### synteny
+- [`SynTracker`](https://github.com/leylabmpi/SynTracker) - (Python, v1.3.1, 2024.09)
+    - Enav H, Paz I & Ley RE. Strain tracking in complex microbiomes using synteny analysis reveals per-species modes of evolution. **_Nat Biotechnol_** 43, 773–783 **(2025)**. https://doi.org/10.1038/s41587-024-02276-2
+
+- ['ntSynt'](https://github.com/bcgsc/ntSynt) - (Python, v1.0.4, 2025.10)
+    - Coombe L, Kazemi P, Wong J, et al. ntSynt: multi-genome synteny detection using minimizer graph mappings. **_BMC Biol_** 23:367 **(2025)**. https://doi.org/10.1186/s12915-025-02455-w
+
 ### view comparative map
 - [`gggenes`](https://github.com/wilkox/gggenes) - Draw gene arrow maps in ggplot2
 
@@ -1048,6 +1092,9 @@ This repository serves as a continuously updated collection of algorithms, tools
 - [`plasmapR`](https://github.com/BradyAJohnston/plasmapR) - Creating plasmid maps inside ggplot
 
 - [`geneviewer`](https://github.com/nvelden/geneviewer) - (R, CRAN release, 2025.1) - An R package designed for drawing gene arrow maps
+
+- [`ziplign`](https://github.com/martinghunt/ziplign) - (GDScript, v1.1.0, 2025.12)
+    - Hunt M, Iqbal Z. Ziplign: a simple-to-use interactive tool to compare bacterial genomes. **Journal of Open Source Software**, 10(116), 9004, **(2025)**. https://doi.org/10.21105/joss.09004
 
 ### HGT
 - [`WAFFLE`](https://github.com/biobakery/waafle) - (Python, v1.1.0, 2024.10)
@@ -1275,6 +1322,10 @@ This repository serves as a continuously updated collection of algorithms, tools
 
 - [`Mumemto`](https://github.com/vikshiv/mumemto) - (C++/Python, v1.3.1, 2025.6)
     - Shivakumar VS, Langmead B. Mumemto: efficient maximal matching across pangenomes. **_Genome Biol_** 26, 169 **(2025)**. https://doi.org/10.1186/s13059-025-03644-0
+
+## mGWAS
+- [`SimPhyNI`](https://github.com/jpeyemi/SimPhyNI) - (Python, 2025.12)
+    - Balogun IO, Mancuso CP, Lieberman TD. High Precision Binary Trait Association on Phylogenetic Trees. **bioRxiv** **(2025)**. https://doi.org/10.64898/2025.12.24.696407
 
 ## Contact
 This repository was created and maintained by [Jie Li](https://github.com/shirleylijie).
